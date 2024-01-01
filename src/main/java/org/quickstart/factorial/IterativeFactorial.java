@@ -1,4 +1,4 @@
-package org.quickstart;
+package org.quickstart.factorial;
 
 public class IterativeFactorial implements FactorialInterface {
   @Override

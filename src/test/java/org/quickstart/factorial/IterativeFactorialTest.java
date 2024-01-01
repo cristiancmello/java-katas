@@ -1,4 +1,4 @@
-package org.quickstart;
+package org.quickstart.factorial;
 
 public class IterativeFactorialTest extends AbstractFactorialTest {
   @Override

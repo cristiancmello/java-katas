@@ -1,4 +1,4 @@
-package org.quickstart;
+package org.quickstart.factorial;
 
 import org.junit.jupiter.api.Test;
 
