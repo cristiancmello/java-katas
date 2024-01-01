@@ -1,4 +1,4 @@
-# Maven Quickstart with JUnit5 and AssertJ
+# Java Katas
 
 Make your **unit tests** and **integration tests** faster.
 Support to build **executable JAR** and **JaCoCo Code Coverage**.
