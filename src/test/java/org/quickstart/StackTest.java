@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class StackTest {
   private Stack stack = new Stack();
 
-  private void pushingInfinityElements() {
+  private void pushingInfinityElementsThrowsOverflow() {
     assertThrows(Overflow.class, () -> {
       for (; ; ) stack.push(0);
     });
@@ -16,7 +16,7 @@ public class StackTest {
   private void createStackWithNthElementsAndVerifyCapacity(int initialCapacity) {
     stack = new Stack(initialCapacity);
 
-    pushingInfinityElements();
+    pushingInfinityElementsThrowsOverflow();
 
     assertEquals(initialCapacity, stack.getSize());
     assertEquals(initialCapacity, stack.getCapacity());
@@ -73,7 +73,7 @@ public class StackTest {
 
   @Test
   public void afterPushingElements_throwsOverflowAndCapacityIsTwo() {
-    pushingInfinityElements();
+    pushingInfinityElementsThrowsOverflow();
 
     assertEquals(2, stack.getSize());
     assertEquals(2, stack.getCapacity());
